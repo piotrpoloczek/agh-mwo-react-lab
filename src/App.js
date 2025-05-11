@@ -1,7 +1,7 @@
 import { useState } from "react";
 import LoginForm from "./LoginForm";
-import "milligram";
 import UserPanel from "./UserPanel";
+import "milligram";
 
 
 function App() {
@@ -14,7 +14,6 @@ function App() {
       {loggedUser === ''
           ? (<LoginForm onLogin={(username) => setLoggedUser(username)} />)
           : (<UserPanel loggedUser={loggedUser} onLogout={(username) => setLoggedUser(username)}/>)}
-
     </div>
   );
 }

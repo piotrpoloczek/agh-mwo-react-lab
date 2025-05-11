@@ -1,3 +1,5 @@
+import MeetingsPage from "./MeetingsPage";
+
 
 export default function UserPanel(props) {
 
@@ -7,6 +9,7 @@ export default function UserPanel(props) {
             <button type="button" onClick={() => props.onLogout('')}>
                 Wyloguj
             </button>
+            <MeetingsPage />
         </div>
     );
 
